@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Pratik6 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        double boy, kilo, vki;
+
+        System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz: " );
+        boy = input.nextDouble();
+
+        System.out.print("Lütfen kilonuzu giriniz: ");
+        kilo = input.nextDouble();
+
+        vki = kilo / (boy * boy);
+
+        System.out.println("Vucut Kitle Indeksiniz: " + vki);
+
+        if (vki < 18.5) {
+            System.out.println("Zayif");
+        } else if (vki >= 18.5 && vki <= 24.9) {
+            System.out.println("Normal");
+        } else {
+            System.out.println("Kilolu");
+
+        }
+
+
+    }
+}
